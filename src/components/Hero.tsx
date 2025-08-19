@@ -4,7 +4,22 @@ import heroImage from "@/assets/hero-marketing.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-hero overflow-hidden">
+      {/* Header with Logo */}
+      <header className="relative z-10 w-full py-4">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center">
+            <img 
+              src="/lovable-uploads/5c4732eb-5537-481d-b764-7c1959eeef5c.png" 
+              alt="KA Logo" 
+              className="h-12 w-auto"
+            />
+          </div>
+        </div>
+      </header>
+      
+      {/* Hero Content */}
+      <div className="flex items-center justify-center min-h-[calc(100vh-80px)]">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0">
         <img 
@@ -53,6 +68,7 @@ const Hero = () => {
               09069295450
             </a>
           </div>
+        </div>
         </div>
       </div>
       
