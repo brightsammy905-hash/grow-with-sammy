@@ -72,9 +72,30 @@ const Hero = () => {
         </div>
       </div>
       
+      {/* Animated Marketing Slides */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        {/* Slide 1 - SEO */}
+        <div className="absolute top-20 left-10 bg-white/10 backdrop-blur-sm rounded-xl p-4 w-64 animate-[slide-in-right_3s_ease-in-out_infinite_alternate]">
+          <h3 className="text-white font-semibold mb-2">🔍 SEO Optimization</h3>
+          <p className="text-white/80 text-sm">Rank higher on Google and get found by your ideal customers</p>
+        </div>
+        
+        {/* Slide 2 - Social Media */}
+        <div className="absolute top-1/2 right-10 bg-white/10 backdrop-blur-sm rounded-xl p-4 w-64 animate-[slide-in-right_3s_ease-in-out_infinite_alternate_1s]">
+          <h3 className="text-white font-semibold mb-2">📱 Social Media</h3>
+          <p className="text-white/80 text-sm">Build brand awareness and engage with your target audience</p>
+        </div>
+        
+        {/* Slide 3 - Digital Ads */}
+        <div className="absolute bottom-20 left-1/4 bg-white/10 backdrop-blur-sm rounded-xl p-4 w-64 animate-[slide-in-right_3s_ease-in-out_infinite_alternate_2s]">
+          <h3 className="text-white font-semibold mb-2">🎯 Digital Advertising</h3>
+          <p className="text-white/80 text-sm">Reach more customers with targeted Facebook, Instagram & Google Ads</p>
+        </div>
+      </div>
+      
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/20 rounded-full blur-2xl"></div>
+      <div className="absolute top-20 right-20 w-20 h-20 bg-white/5 rounded-full blur-xl"></div>
+      <div className="absolute bottom-20 right-10 w-32 h-32 bg-accent/10 rounded-full blur-2xl"></div>
     </section>
   );
 };
